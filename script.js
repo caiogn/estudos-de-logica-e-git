@@ -123,30 +123,41 @@ else {
         alert('Jogador 2 ganhou')
     }*/
 
-    /*var num = prompt('Digite um numero')
-    num = parseInt(num);
+/*var num = prompt('Digite um numero')
+num = parseInt(num);
 
-    var indice = 1;
+var indice = 1;
 
-    //o while é enquanto o indice for menor ou igual a 10, continuar o comando 
-    while(indice <=10){
-    document.write(num + ' x ' + indice + '=' + (num * indice) + '<br>');
-    
-    //o indice tem o valor de 1, ao executar o codgio acima ele vem até aqui e soma +1 ao indice, fazendo o virar 
-    //2 e assim continuamente até que ele chega no 10 e ai ele para. 
-    indice = indice + 1;
+//o while é enquanto o indice for menor ou igual a 10, continuar o comando 
+while(indice <=10){
+document.write(num + ' x ' + indice + '=' + (num * indice) + '<br>');
+ 
+//o indice tem o valor de 1, ao executar o codgio acima ele vem até aqui e soma +1 ao indice, fazendo o virar 
+//2 e assim continuamente até que ele chega no 10 e ai ele para. 
+indice = indice + 1;
+}
+document.write('Fim da tabela');*/
+
+//pode ser feito com o for tambem
+/* var num = prompt('Digite um numero')
+ num = parseInt(num);
+
+ for(i = 1; i <=10 ; i++)
+ document.write(num + ' x ' + i + '=' + (num * i) + '<br>'); */
+
+//adicionando tudo ao github 
+//ano bissexto exercicio 
+
+var ano = 1004
+
+while (ano <= 2023) {
+    if ((ano % 100 === 0) && (ano % 400 === 0)) {
+        document.write(ano + ' Não é um ano bissexto<br>');
+    } else {
+        document.write(ano + '<br>');
     }
-    document.write('Fim da tabela');*/
-
-    //pode ser feito com o for tambem
-    var num = prompt('Digite um numero')
-    num = parseInt(num);
-
-    for(i = 1; i <=10 ; i++)
-    document.write(num + ' x ' + i + '=' + (num * i) + '<br>');
-
-    //adicionando tudo ao github
-
+    ano += 4; 
+}
 
 
 
