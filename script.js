@@ -148,6 +148,7 @@ document.write('Fim da tabela');*/
 //adicionando tudo ao github 
 //ano bissexto exercicio 
 
+/*
 var ano = 1004
 
 while (ano <= 2023) {
@@ -157,7 +158,38 @@ while (ano <= 2023) {
         document.write(ano + '<br>');
     }
     ano += 4; 
+}*/
+
+//exercicio para fazer functions
+//preciso criar um gerador de tabuadas que ao terminar de calcular limpe a tela
+
+function generate(){
+   var num = prompt('Digite o numero que deseja multiplicar')
+   num = parseFloat(num)
+
+   clean();
+
+   var i = 1;
+   while (i <= 10){
+    text += num + " x " + i + " = " + (num*i) + "<br>";
+    i++;
+   };
+   output.innerHTML = text
 }
+
+function clean(){
+    text = '';
+    output.innerHTML = text
+}
+
+function learnmore() {
+   window.alert("Este é um gerador de tabuadas até 10, escreva qualquer  numero e o resultado aparecerá na tela!")
+   
+}
+
+var getId = document.querySelector('#output');
+var text = '';
+
 
 
 
